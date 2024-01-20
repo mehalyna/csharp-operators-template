@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Task1",
+      "setup": "sudo apt-get update && sudo apt-get install -y apt-transport-https && sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0",
+      "run": "DOTNET_CLI_HOME=/tmp/ dotnet test --filter TestCategory=CategoryA",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 100
+    }
+  ]
+}
